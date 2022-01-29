@@ -7,6 +7,13 @@ body::-webkit-scrollbar{
 }
 
 
+@media only screen and (min-width: 768px) {
+  .show{
+    display: none;
+  }
+}
+
+
 #side-nav{
   height: 100vh;
 }
@@ -203,8 +210,10 @@ height: 60px;
 
 }
 
-.input-msg::-webkit-input-placeholder{
-  
+.input-msg[-webkit-input-placeholder]{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   width: 131px;
   height: 16px;
   left: 660px;

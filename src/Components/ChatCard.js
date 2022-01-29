@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardBody, CardHeader, CardFooter, Input } from 'reactstrap'
+import { Card, CardBody, CardHeader, CardFooter, Input, InputGroup, InputGroupAddon } from 'reactstrap'
 
 const ChatCard = (props) => {
 
@@ -102,7 +102,10 @@ const ChatCard = (props) => {
             </CardBody>
             <div className="row p-2">
                 <div className="col-10 ">
-                    <Input type='text' className="input-msg my-2" placeholder="Write a message" />
+                    <InputGroup>
+                        <Input type='text' className="input-msg my-2" placeholder="Write a message " />
+                        <span class="input-group-text my-2" style={{ backgroundColor: 'white', border: '' }} id="basic-addon1"><i className="fa fa-lg fa-paperclip"></i></span>
+                    </InputGroup>
                 </div>
                 <div className="col-1 ">
                     <center>
