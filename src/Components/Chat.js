@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Modal, ModalHeader, ModalBody, ModalFooter, Button, Input } from 'reactstrap';
+import { Modal, ModalBody, Input } from 'reactstrap';
 import { chatlist } from "../data/chatlist";
 import ChatCard from "./ChatCard";
 import ChatList from "./ChatList";

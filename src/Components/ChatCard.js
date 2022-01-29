@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardBody, CardHeader, CardFooter, Input, InputGroup, InputGroupAddon } from 'reactstrap'
+import { Card, CardBody, CardHeader, Input, InputGroup } from 'reactstrap'
 
 const ChatCard = (props) => {
 
@@ -35,7 +35,7 @@ const ChatCard = (props) => {
                 <div className="row p-2">
                     <div className="col-1">
                         <center>
-                            <img src={props.chat.user.src == '' ? '/images/user.png' : "/images/" + props.chat.user.src} alt='USER_PROFILE' className=" user-profile rounded-circle " />
+                            <img src={props.chat.user.src === '' ? '/images/user.png' : "/images/" + props.chat.user.src} alt='USER_PROFILE' className=" user-profile rounded-circle " />
                         </center>
                     </div>
                     <div className="col-9 mx-4 mx-lg-1">
@@ -76,7 +76,7 @@ const ChatCard = (props) => {
                 <div className="row">
                     <div className="col-2 ">
                         <center>
-                            <img src={props.chat.user.src == '' ? '/images/user.png' : "/images/" + props.chat.user.src} alt='USER_PROFILE' className=" user-profile rounded-circle " />
+                            <img src={props.chat.user.src === '' ? '/images/user.png' : "/images/" + props.chat.user.src} alt='USER_PROFILE' className=" user-profile rounded-circle " />
                         </center>
                     </div>
                     <div className="col-2 ">

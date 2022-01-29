@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, InputGroup } from 'reactstrap';
+import { Card } from 'reactstrap';
 
 const ChatList = (props) => {
 
@@ -13,7 +13,7 @@ const ChatList = (props) => {
                 <div className="row">
                     <div className="col-3 ">
                         <center>
-                            <img src={chat.user.src == '' ? '/images/user.png' : "/images/" + chat.user.src} alt='USER_PROFILE' className=" user-profile rounded-circle " />
+                            <img src={chat.user.src === '' ? '/images/user.png' : "/images/" + chat.user.src} alt='USER_PROFILE' className=" user-profile rounded-circle " />
                         </center>
                     </div>
                     <div className="col-9">

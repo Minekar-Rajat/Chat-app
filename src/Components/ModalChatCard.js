@@ -32,7 +32,7 @@ const ChatCard = (props) => {
                 <div className="row p-2">
                     <div className="col-2">
                         <center>
-                            <img src={props.chat.user.src == '' ? '/images/user.png' : "/images/" + props.chat.user.src} alt='USER_PROFILE' className=" user-profile rounded-circle " />
+                            <img src={props.chat.user.src === '' ? '/images/user.png' : "/images/" + props.chat.user.src} alt='USER_PROFILE' className=" user-profile rounded-circle " />
                         </center>
                     </div>
                     <div className="col-8 mx-4 mx-lg-1">
@@ -90,7 +90,7 @@ const ChatCard = (props) => {
                             <center><i className="fa fa-lg fa-arrow-left mt-4" onClick={() => props.toggleModal()}></i></center>
                         </div>
                         <div className="col-2 px-1">
-                            <img src={props.chat.user.src == '' ? '/images/user.png' : "/images/" + props.chat.user.src} alt='USER_PROFILE' className=" modal-user-profile rounded-circle mt-1" />
+                            <img src={props.chat.user.src === '' ? '/images/user.png' : "/images/" + props.chat.user.src} alt='USER_PROFILE' className=" modal-user-profile rounded-circle mt-1" />
                         </div>
                         <div className="col-6 ">
                             <p className="modal-username mt-2">{props.chat.user.name}</p>
