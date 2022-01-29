@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import Main from './Components/Main';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='row'>
+      <div className='col-0 col-md-1 d-none d-md-block' id='side-nav' style={{ backgroundColor: '#303C6C', borderRadius: '0px 20px 20px 0px' }}>
+
+      </div>
+      <div className='col-md-11 col-12'>
+        <Main />
+      </div>
+
     </div>
   );
 }

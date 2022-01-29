@@ -1,38 +1,293 @@
-.App {
-  text-align: center;
+body{
+  overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body::-webkit-scrollbar{
+  display: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+#side-nav{
+  height: 100vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.logo-name{
+  width: 98px;
+height: 40px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 600;
+font-size: 40px;
+line-height: 100%;
+/* identical to box height, or 40px */
+
+text-align: center;
+letter-spacing: -0.02em;
+
+color: #3C3C3C;
+}
+
+.sort-icon{
+  font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 100%;
+/* identical to box height, or 24px */
+
+text-align: center;
+letter-spacing: -0.02em;
+
+color: #3C3C3C;
+}
+
+.username{
+  font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 30px;
+color: #3C3C3C;
+/* identical to box height */
+
+
+color: #3C3C3C;
+}
+
+#chat-list{
+    height: 70vh;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+#chat-list::-webkit-scrollbar{
+  display: none;
+}
+
+#chat-card{
+  height: 87vh;
+}
+
+
+
+.user-profile{
+  width: 60px;
+height: 60px;
+}
+
+.user-name{
+  font-family: Poppins;
+font-style: normal;
+font-size: 18px;
+line-height: 100%;
+/* identical to box height, or 18px */
+letter-spacing: -0.02em;
+color: #3C3C3C;
+}
+
+.last-text{
+  font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 100%;
+/* identical to box height, or 14px */
+
+letter-spacing: -0.02em;
+
+color: #ABABAB;
+}
+
+
+
+#chatlist-container::-webkit-scrollbar{
+  display: none;
+}
+
+.usercard:hover{
+  background-color: rgb(245, 245, 245);
+}
+
+
+.search-input{
+  height: 50px;
+background: #FFFFFF;
+box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.35);
+border-radius: 10px;
+}
+
+.search-input::-webkit-input-placeholder{
+  width: 100px;
+height: 24px;
+left: 250px;
+top: 176px;
+
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 100%;
+/* identical to box height, or 24px */
+
+text-align: center;
+letter-spacing: -0.02em;
+
+color: #BBBBBB;
+}
+
+
+
+.chatcard{
+  height: 100%;
+
+background: #FFFFFF;
+box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.35);
+border-radius: 20px;
+}
+
+.cardheader{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.charcard-header-username{
+  font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 100%;
+/* identical to box height, or 20px */
+
+letter-spacing: -0.02em;
+
+color: #FFFFFF;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#messages-cardbody::-webkit-scrollbar{
+  display: none;
+}
+
+
+.message-card{
+  display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 13px 10px;
+
+position: absolute;
+
+}
+
+.msg-text{
+  font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 100%;
+/* or 16px */
+
+letter-spacing: -0.02em;
+
+color: #3C3C3C;
+}
+
+
+.input-msg{
+  background: #FFFFFF;
+border: 1px solid #BBBBBB;
+box-sizing: border-box;
+border-radius: 10px;
+width: 650px;
+height: 60px;
+
+}
+
+.input-msg::-webkit-input-placeholder{
+  
+  width: 131px;
+  height: 16px;
+  left: 660px;
+  top: 906px;  
+font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 100%;
+/* identical to box height, or 16px */
+
+text-align: center;
+letter-spacing: -0.02em;
+
+color: #3C3C3C;
+}
+
+
+@media only screen and (max-width: 768px) {
+  #chat-list {
+    background-color: rgb(255, 255, 255);
   }
-  to {
-    transform: rotate(360deg);
+  #chat-card{
+    display: none;
   }
+  #chat-modal{
+    padding: 0;
+  }
+  #header{
+    display: none;
+  }
+}
+
+
+.modal-msg{
+  font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 100%;
+/* identical to box height, or 18px */
+
+text-align: center;
+letter-spacing: -0.02em;
+
+color: #FFFFFF;
+}
+
+.modal-user-header{
+height: 60px;
+width: 100%;
+
+background: #FFFFFF;
+box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.modal-user-profile{
+  width: 50px;
+height: 50px;
+}
+
+.modal-username{
+  font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 100%;
+/* identical to box height, or 16px */
+letter-spacing: -0.02em;
+
+color: #3C3C3C;
+}
+
+.modal-online{
+  
+font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 100%;
+/* identical to box height, or 12px */
+
+letter-spacing: -0.02em;
+
+color: #3C3C3C;
 }
