@@ -1,12 +1,12 @@
 import React from "react";
 import Chat from "./Chat";
-import ChatNavbar from "./Nav";
+import ChatNav from "./Nav";
 
 const Main = () => {
 
     return (
         <div>
-            <ChatNavbar />
+            <ChatNav />
             <Chat />
         </div >
     );
