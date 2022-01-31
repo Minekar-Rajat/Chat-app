@@ -1,8 +1,15 @@
-import React from "react";
-import { Card, CardBody, CardHeader, Input, InputGroup } from 'reactstrap'
+import React, { useState, useEffect } from "react";
+import { Card, CardBody, CardHeader, Input, InputGroup, Collapse, Navbar, NavbarToggler, Nav, NavItem, NavLink } from 'reactstrap'
 
 const ChatCard = (props) => {
 
+    const [collapsed, setCollapse] = useState(true);
+
+    const toggleNavbar = () => {
+        setCollapse(!collapsed);
+    }
+
+    useEffect(() => { }, [collapsed]);
 
     if (!props.chat) {
         return (
@@ -11,6 +18,9 @@ const ChatCard = (props) => {
             </div>
         )
     }
+
+
+
 
 
     var giveTime = (timestamp) => {
@@ -69,17 +79,28 @@ const ChatCard = (props) => {
 
     return (
         <Card className="chatcard" style={{ borderRadius: '20px 20px 20px 20px' }}>
-            <CardHeader className="cardheader " style={{ backgroundColor: '#303C6C' }}>
+            <CardHeader className="cardheader" style={{ backgroundColor: '#303C6C' }}>
                 <div className="row">
-                    <div className="col-1">
-                        <i className="fa fa-bars" style={{ color: 'white' }}></i>
+                    <div className="col-12">
+
+                        <Navbar className="d-block d-md-none px-0" dark id='sm-nav'>
+                            <NavbarToggler onClick={toggleNavbar} className="" style={{ marginLeft: '-15px' }} />
+                            <p className="msg mx-auto pt-1">Messages</p>
+                            <Collapse isOpen={!collapsed} navbar>
+                                <Nav navbar>
+                                    <NavItem className="mt-3 mb-2 mx-3">
+                                        <NavLink href="#" active><i className="fa fa-lg fa-home msg "><i className="px-3 msg"> Home </i></i></NavLink>
+                                    </NavItem>
+                                    <NavItem className="my-2 mx-3">
+                                        <NavLink href="#" active><i className="fa fa-lg fa-commenting-o msg"><i className="px-3 msg"> Messages </i></i></NavLink>
+                                    </NavItem>
+                                    <NavItem className="my-2 mx-3">
+                                        <NavLink href="#" active><i className='fa fa-lg fa-gears msg'><i className="px-3 msg"> Settings </i></i></NavLink>
+                                    </NavItem>
+                                </Nav>
+                            </Collapse>
+                        </Navbar>
                     </div>
-                    <div className="col-10">
-                        <center>
-                            <p className="modal-msg">Messages</p>
-                        </center>
-                    </div>
-                    <div className="col-1"></div>
                 </div>
             </CardHeader>
 

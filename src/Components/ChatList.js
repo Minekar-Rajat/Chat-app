@@ -17,8 +17,8 @@ const ChatList = (props) => {
                         </center>
                     </div>
                     <div className="col-9">
-                        <h4 className="mt-2 px-lg-0 px-md-3 px-xs-5 user-name">{chat.user.name}</h4>
-                        <p className="last-text px-lg-0 px-md-3 px-xs-5 ">{chat.messages[len - 1].message}</p>
+                        <h4 className="mt-2 user-name">{chat.user.name}</h4>
+                        <p className="last-text user-name ">{chat.messages[len - 1].message}</p>
                     </div>
                 </div>
 

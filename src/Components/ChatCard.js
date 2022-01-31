@@ -38,7 +38,7 @@ const ChatCard = (props) => {
                             <img src={props.chat.user.src === '' ? '/images/user.png' : "/images/" + props.chat.user.src} alt='USER_PROFILE' className=" user-profile rounded-circle " />
                         </center>
                     </div>
-                    <div className="col-8 mx-3 mx-md-4 mx-lg-4">
+                    <div className="col-8 mx-3 mx-md-5 mx-lg-4">
                         <Card className="message-card" style={{ borderRadius: '0px 20px 10px', backgroundColor: '#F4F4F4' }}>
                             <div className="row"><p className="msg-text">{msg.message}</p></div>
                             <span className="row" style={{ width: '100%', display: 'flex', textAlign: 'end' }}><p style={{ fontSize: '10px' }} >{giveTime(msg.timestamp)}</p></span>
