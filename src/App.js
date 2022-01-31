@@ -9,7 +9,8 @@ function App() {
   const [sidenav, setSideNav] = useState(true);
 
   const toggleSideNav = () => {
-    //setSideNav(!sidenav);
+    setSideNav(sidenav);
+
   }
 
   useEffect(() => { }, [sidenav]);
