@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+
+
 body{
   overflow: hidden;
 }
@@ -36,7 +39,15 @@ color: #3C3C3C;
 }
 
 .sort-icon{
-  font-family: Poppins;
+  width: 40px;
+height: 40px;
+padding: 10px;
+background: #F4F4F4;
+border-radius: 10px;
+}
+
+.sort{
+  font-family: "Poppins";
 font-style: normal;
 font-weight: normal;
 font-size: 24px;
@@ -50,7 +61,7 @@ color: #3C3C3C;
 }
 
 .username{
-  font-family: Poppins;
+  font-family: "Poppins";
 font-style: normal;
 font-weight: normal;
 font-size: 20px;
@@ -85,7 +96,7 @@ height: 60px;
 }
 
 .user-name{
-  font-family: Poppins;
+  font-family: "Poppins";
 font-style: normal;
 font-size: 18px;
 line-height: 100%;
@@ -95,7 +106,7 @@ color: #3C3C3C;
 }
 
 .last-text{
-  font-family: Poppins;
+  font-family: "Poppins";
 font-style: normal;
 font-weight: normal;
 font-size: 14px;
@@ -114,14 +125,14 @@ color: #ABABAB;
 }
 
 .usercard:hover{
-  background-color: rgb(245, 245, 245);
+  background-color: rgb(231, 231, 231);
 }
 
 
 .search-input{
   height: 50px;
 background: #FFFFFF;
-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.35);
+box-shadow: 0px 0px 4px  rgba(0, 0, 0, 0.35);
 border-radius: 10px;
 }
 
@@ -130,7 +141,7 @@ border-radius: 10px;
 height: 24px;
 left: 250px;
 top: 176px;
-
+font-family: "Poppins";
 font-style: normal;
 font-weight: normal;
 font-size: 24px;
@@ -158,7 +169,7 @@ border-radius: 20px;
 }
 
 .charcard-header-username{
-  font-family: Poppins;
+  font-family: "Poppins";
 font-style: normal;
 font-weight: 600;
 font-size: 20px;
@@ -182,12 +193,11 @@ flex-direction: row;
 align-items: flex-start;
 padding: 13px 10px;
 
-position: absolute;
 
 }
 
 .msg-text{
-  font-family: Poppins;
+  font-family: "Poppins";
 font-style: normal;
 font-weight: normal;
 font-size: 16px;
@@ -218,7 +228,7 @@ height: 60px;
   height: 16px;
   left: 660px;
   top: 906px;  
-font-family: Poppins;
+font-family: "Poppins";
 font-style: normal;
 font-weight: normal;
 font-size: 16px;
@@ -242,12 +252,28 @@ color: #3C3C3C;
   #chat-modal{
     padding: 0;
   }
+  #sm-nav{
+    background-color: #303C6C;
+    color: white;
+    
+  }
+  .navicon{
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+font-size: 18px;
+line-height: 100%;
+/* identical to box height, or 18px */
+
+text-align: center;
+letter-spacing: -0.02em;
+  }
   
 }
 
 
 .modal-msg{
-  font-family: Poppins;
+  font-family: "Poppins";
 font-style: normal;
 font-weight: 500;
 font-size: 18px;
@@ -259,6 +285,20 @@ letter-spacing: -0.02em;
 
 color: #FFFFFF;
 }
+
+.msg{
+  font-family: "Poppins";
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 100%;
+/* identical to box height, or 18px */
+
+text-align: center;
+letter-spacing: -0.02em;
+}
+
+
 
 .modal-user-header{
 height: 60px;
@@ -274,7 +314,7 @@ height: 50px;
 }
 
 .modal-username{
-  font-family: Poppins;
+  font-family: "Poppins";
 font-style: normal;
 font-weight: 500;
 font-size: 16px;
@@ -287,7 +327,7 @@ color: #3C3C3C;
 
 .modal-online{
   
-font-family: Poppins;
+font-family: "Poppins";
 font-style: normal;
 font-weight: normal;
 font-size: 12px;

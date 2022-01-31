@@ -6,7 +6,7 @@ const ChatCard = (props) => {
 
     if (!props.chat) {
         return (
-            <div className="" style={{ height: '100%', paddingTop: '28%' }}>
+            <div className="border " style={{ height: '100%', backgroundColor: 'rgb(220,220,220)', color: 'white', paddingTop: '28%', borderRadius: '20px' }}>
                 <center>
                     <i className="fa fa-lg fa-thumbs-up" style={{ color: '#303C6C', fontSize: '70px' }}></i>
                     <p className="user-name pt-4">Welcome Start Chatting</p>
@@ -38,7 +38,7 @@ const ChatCard = (props) => {
                             <img src={props.chat.user.src === '' ? '/images/user.png' : "/images/" + props.chat.user.src} alt='USER_PROFILE' className=" user-profile rounded-circle " />
                         </center>
                     </div>
-                    <div className="col-9 mx-4 mx-lg-1">
+                    <div className="col-8 mx-3 mx-md-4 mx-lg-4">
                         <Card className="message-card" style={{ borderRadius: '0px 20px 10px', backgroundColor: '#F4F4F4' }}>
                             <div className="row"><p className="msg-text">{msg.message}</p></div>
                             <span className="row" style={{ width: '100%', display: 'flex', textAlign: 'end' }}><p style={{ fontSize: '10px' }} >{giveTime(msg.timestamp)}</p></span>
@@ -79,10 +79,10 @@ const ChatCard = (props) => {
                             <img src={props.chat.user.src === '' ? '/images/user.png' : "/images/" + props.chat.user.src} alt='USER_PROFILE' className=" user-profile rounded-circle " />
                         </center>
                     </div>
-                    <div className="col-2 ">
+                    <div className="col-8  ">
                         <p className="charcard-header-username py-3">{props.chat.user.name}</p>
                     </div>
-                    <div className="col-1 offset-6">
+                    <div className="col-1">
                         <center>
                             <i className="fa fa-lg fa-ellipsis-v my-3" ></i>
                         </center>

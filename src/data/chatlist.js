@@ -8,7 +8,7 @@ exports.chatlist = [
         messages: [
             {
                 username: 'Esther',
-                message: 'Hii Prakash ! Feels like it’s been a while! How are you? Do you have any time for the remainder of the week to help me with an ongoing project?',
+                message: 'Hii Prakash ! Feels like it’s been a while! How are you? Do you have any time for the remainder of the week to help me with an ongoing project? Hii Prakash ! Feels like it’s been a while! How are you? Do you have any time for the remainder of the week to help me with an ongoing project?',
                 timestamp: new Date()
             },
             {
