@@ -22,6 +22,9 @@ const Navsm = () => {
                     <Collapse isOpen={!collapsed} navbar>
                         <Nav navbar>
                             <NavItem className="mt-3 mb-2 mx-3">
+                                <NavLink href="#" active><img src='/images/dashboard.png' alt="dashboard.png" className='sidenavdashboard' /><i className="px-3 msg"> Dashboard</i></NavLink>
+                            </NavItem>
+                            <NavItem className="mt-3 mb-2 mx-3">
                                 <NavLink href="#" active><i className="fa fa-lg fa-home msg "><i className="px-3 msg"> Home </i></i></NavLink>
                             </NavItem>
                             <NavItem className="my-2 mx-3">
@@ -29,6 +32,9 @@ const Navsm = () => {
                             </NavItem>
                             <NavItem className="my-2 mx-3">
                                 <NavLink href="#" active><i className='fa fa-lg fa-gears msg'><i className="px-3 msg"> Settings </i></i></NavLink>
+                            </NavItem>
+                            <NavItem className="mt-3 mb-2 mx-3">
+                                <NavLink href="#" active><i className="fa fa-lg fa-sign-out msg "><i className="px-3 msg"> Logout </i></i></NavLink>
                             </NavItem>
                         </Nav>
                     </Collapse>
