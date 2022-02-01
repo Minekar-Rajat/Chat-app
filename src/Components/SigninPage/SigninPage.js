@@ -1,5 +1,4 @@
 import React from 'react';
-import { Button } from 'reactstrap';
 import './Signin.css';
 
 const SigninPage = () => {
@@ -10,13 +9,13 @@ const SigninPage = () => {
                 <center>
 
                     <p className='welcome-text'>Welcome to <b>HireKarma</b></p>
-                    <img src="/images/frontimg-signin.png" alt="Welcome image" className='img-fluid front-img p-2' />
+                    <img src="/images/frontimg-signin.png" alt="Welcome pic" className='img-fluid front-img p-2' />
 
                     <p className='d-none d-lg-block'>
                         <p className='tnc-text pt-3'>{"By creating an account you accept Our"}</p>
-                        <a className='tnc-link' href='#' >{" terms & conditions"}</a>
+                        <a className='tnc-link' href='/' >{" terms & conditions"}</a>
                         <i className='tnc-text'>{" and "}</i>
-                        <a className='tnc-link' href='#' > {"privacy policy."}</a>
+                        <a className='tnc-link' href='/' > {"privacy policy."}</a>
                     </p>
                 </center>
             </div>
@@ -24,7 +23,7 @@ const SigninPage = () => {
                 <center>
                     <ul style={{ listStyleType: 'none' }}>
                         <li>
-                            <img src='/images/logo.png' className='img-fluid logo  ' />
+                            <img src='/images/logo.png' alt='logo' className='img-fluid logo  ' />
                         </li>
                         <li>
                             <button className='signin-btn  shadow-lg'>Corporate</button>
@@ -42,9 +41,9 @@ const SigninPage = () => {
                     </ul>
                     <p className='d-block d-lg-none'>
                         <p className='tnc-text pt-3'>{"By creating an account you accept Our"}</p>
-                        <a className='tnc-link' href='#' >{" terms & conditions"}</a>
+                        <a className='tnc-link' href='/' >{" terms & conditions"}</a>
                         <i className='tnc-text'>{" and "}</i>
-                        <a className='tnc-link' href='#' > {"privacy policy."}</a>
+                        <a className='tnc-link' href='/' > {"privacy policy."}</a>
                     </p>
                 </center>
 
