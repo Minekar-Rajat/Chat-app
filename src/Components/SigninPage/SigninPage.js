@@ -9,8 +9,8 @@ const SigninPage = () => {
                 <center>
 
                     <p className='welcome-text'>Welcome to <b>HireKarma</b></p>
-                    <img src="/images/frontimg-signin.png" alt="Welcome pic" className='img-fluid front-img p-2' />
-
+                    <img src="/images/frontimg-signin2.png" alt="Welcome pic" className='img-fluid front-img p-2 d-none d-lg-block' />
+                    <img src="/images/frontimg-signin.png" alt="Welcome pic" className='img-fluid front-img p-2 d-block d-lg-none' />
                     <p className='d-none d-lg-block'>
                         <p className='tnc-text pt-3'>{"By creating an account you accept Our"}</p>
                         <a className='tnc-link' href='/' >{" terms & conditions"}</a>
