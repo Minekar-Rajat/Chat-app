@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+
+
+#welcome-container{
+    background-color: #394882;
+    height : 100vh;
+}
+
+#option-container{
+    height : 100vh;
+    background-color: #E5E5E5;
+}
+
+
+.welcome-text{
+    font-family: Poppins;
+font-style: normal;
+font-weight: lighter;
+font-size: 38px;
+line-height: 100%;
+padding-top: 50px;
+/* identical to box height, or 48px */
+
+letter-spacing: -0.02em;
+
+color: #FFFFFF;
+}
+
+.tnc-text{
+    font-family: Poppins;
+font-style: normal;
+font-weight: lighter;
+font-size: 18px;
+line-height: 100%;
+/* or 24px */
+
+letter-spacing: -0.02em;
+
+color: #FFFFFF;
+}
+
+
+.tnc-link{
+    font-family: Poppins;
+font-style: normal;
+font-weight: lighter;
+font-size: 18px;
+line-height: 100%;
+/* or 24px */
+
+letter-spacing: -0.02em;
+
+color: #1AF174;
+}
+
+.tnc-link:hover{
+    color: #1AF174; 
+}
+
+
+.front-img{
+    width: 500px;
+    height: 500px;
+
+}
+
+.logo{
+    width: 238.81px;
+    height: 75px;
+    margin-top: 125px;
+}
+
+.signin-btn{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    /* identical to box height, or 28px */
+    letter-spacing: -0.02em;
+    background-color:  #303C6C;
+    border-radius: 35px;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    width: 270px;
+    margin-top: 25px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    #welcome-container{
+        padding-top: 15px;
+        background-color: white;
+        height : 42vh;
+    }
+    
+    #option-container{  
+        height : 58vh;
+        background-color: white;
+    
+    }
+
+    .front-img{
+        width: 250px;
+        height: 250px;
+    
+    }
+
+    .welcome-text{
+        color: black;
+        font-size: 25px;
+        padding-top: 10px;
+    }
+    .tnc-text{
+        color: black;
+        font-size: 15px;
+    }
+    .tnc-link{
+        font-size: 15px;
+    }
+
+    .logo{
+        width: 208.81px;
+        height: 60px;
+        margin-top: 10px;
+        
+    }
+
+    .signin-btn{
+        padding: 10px 10px 10px 10px;
+        width: 270px;  
+        font-weight: 500;
+        font-size: 20px;
+        margin-top: 15px; 
+    }
+
+    
+}
+
+
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+    #welcome-container{
+        padding-top: 20px;
+        background-color: white;
+        height : 40vh;
+    }
+    
+    #option-container{  
+        height : 60vh;
+        background-color: white;
+    
+    }
+
+    .front-img{
+        width: 350px;
+        height: 350px;
+    
+    }
+
+    .welcome-text{
+        color: black;
+        font-size: 35px;
+        padding-top: 20px;
+    }
+    .tnc-text{
+        color: black;
+        font-size: 25px;
+    }
+    .tnc-link{
+        font-size: 25px;
+    }
+
+    .logo{
+        width: 368.81px;
+        height: 180px;
+        margin-top: 10px;
+        
+    }
+
+    .signin-btn{
+        padding: 20px 20px 20px 20px;
+        width: 320px;  
+        font-weight: 500;
+        font-size: 30px;
+        margin-top: 15px; 
+    }
+
+    
+}
